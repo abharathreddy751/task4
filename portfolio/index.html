@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">MyPortfolio</a>
+      <button id="nav-toggle" class="nav-toggle">☰</button>
+      <nav id="nav" class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <h1>Hi, I'm Bharath</h1>
+        <p>Front-end Developer • JavaScript • Responsive Design</p>
+        <a class="btn" href="#projects">See my work</a>
+      </div>
+    </section>
+    <section id="about" class="about container">
+      <h2>About</h2>
+      <p>Passionate developer building interactive and responsive web experiences.</p>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+      </ul>
+    </section>
+    <section id="projects" class="projects container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="https://picsum.photos/seed/p1/600/350" alt="project">
+          <h3>Interactive Carousel</h3>
+          <p>Image carousel built with vanilla JS.</p>
+          <a class="btn small" href="#">View</a>
+        </article>
+        <article class="project-card">
+          <img src="https://picsum.photos/seed/p2/600/350" alt="project">
+          <h3>To-Do App</h3>
+          <p>To-do list with localStorage persistence.</p>
+          <a class="btn small" href="../todo/todo.html">Open</a>
+        </article>
+        <article class="project-card">
+          <img src="https://picsum.photos/seed/p3/600/350" alt="project">
+          <h3>Product Listing</h3>
+          <p>Filtering and sorting demo.</p>
+          <a class="btn small" href="../products/products.html">Open</a>
+        </article>
+      </div>
+    </section>
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your name" required>
+        <input type="email" id="email" placeholder="Your email" required>
+        <textarea id="message" placeholder="Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send</button>
+        <p id="form-msg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">© 2025 Bharath</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

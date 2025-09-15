@@ -1,0 +1,15 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#f3f4f6;display:flex;align-items:center;justify-content:center;height:100vh}
+.wrap{width:100%;max-width:520px;background:#fff;padding:1.25rem;border-radius:12px;box-shadow:0 8px 24px rgba(15,23,42,.06)}
+header h1{margin:0 0 .5rem}
+.input-area{display:flex;gap:.5rem}
+.input-area input{flex:1;padding:.6rem;border:1px solid #e5e7eb;border-radius:8px}
+.input-area button{padding:.6rem 1rem;border-radius:8px;border:0;background:#2563eb;color:#fff}
+#tasks{list-style:none;padding:0;margin:1rem 0}
+.task{display:flex;align-items:center;justify-content:space-between;padding:.6rem;border:1px solid #eef2ff;border-radius:8px;margin-bottom:.5rem}
+.task .left{display:flex;align-items:center;gap:.6rem}
+.task input[type=checkbox]{width:18px;height:18px}
+.task .text{max-width:320px;word-break:break-word}
+.controls{display:flex;gap:.5rem;justify-content:flex-end}
+.controls button{padding:.5rem .75rem;border-radius:8px;border:0;background:#e5e7eb}
+@media(max-width:480px){.wrap{padding:.9rem}}

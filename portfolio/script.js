@@ -1,0 +1,6 @@
+const navToggle=document.getElementById('nav-toggle')
+const nav=document.getElementById('nav')
+navToggle.addEventListener('click',()=>{nav.style.display=nav.style.display==='flex'?'none':'flex'})
+const form=document.getElementById('contact-form')
+const msg=document.getElementById('form-msg')
+form.addEventListener('submit',e=>{e.preventDefault();msg.textContent='Message sent (demo)';form.reset();setTimeout(()=>msg.textContent='',2500)})
